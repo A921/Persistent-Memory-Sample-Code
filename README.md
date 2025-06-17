@@ -1,1 +1,1 @@
-# Persistent-Memory-k-Core-Decomposition
+# Persistent-Memory-Sample-Code
