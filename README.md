@@ -1,5 +1,6 @@
+NOTE: This is still a WIP
 # Persistent-Memory sample code using libpmem
-Simple introduction to the libpmem library for perisistent memory (PM) programming. Summarized manual pages intended to strengthen my understanding as well for anyone interested.
+Brief introduction to the libpmem library for perisistent memory (PM) programming. Summarized manual pages intended to strengthen my understanding as well for anyone interested.
 Although the library provides low-level support for persistent memory, it is still usable without PM devices. 
 For use with PM devices, applications need to use direct access storage (DAX), which enables direct access to files stores, directly mapping virtual addresses to physical addresses and thus bypassing page caches.
  
@@ -17,7 +18,7 @@ Opens persistent memory file. If not a PM file, it will memory map a traditional
 - Returns pointer to start of memory mapped region upon success
 
 ## Persisting Changes
-### Flush and drain instructions
+### Flush and fence instructions for Intel platforms
 For backround, it would be handy to be familiarized with the Intel lower level instructions that will be used to persist data to PM. All of the above instructions are executable in user space which makes them efficient by not requiring these instructions to go into the kernel.
 
 
