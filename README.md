@@ -19,7 +19,7 @@ Opens persistent memory file. If not a PM file, it will memory map a traditional
 
 ## Persisting Changes
 ### Flush and fence instructions for Intel platforms
-For backround, it would be handy to be familiarized with the Intel lower level instructions that will be used to persist data to PM. All of the above instructions are executable in user space which makes them efficient by not requiring these instructions to go into the kernel.
+For backround, it would be handy to be familiarized with the Intel lower level instructions that will be used to persist data to PM. The instructions below are executable in user space which makes them efficient by not requiring these instructions to go into the kernel.
 
 
 ```asm
